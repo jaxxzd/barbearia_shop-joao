@@ -13,18 +13,22 @@
 </head>
 
 <body id="body-reserva">
-    <header id="header-desktop">
-        <figure>
-            <a href="index.html">
+    <input type="checkbox" id="mensagem-toggle" hidden>
+    <header id="header-login">
+        <label for="mensagem-toggle">
+            <figure>
                 <img src="./img/Logo.png" alt="Logo-header" id="logo-header-login">
-            </a>
-            <figcaption>Logo header</figcaption>
-        </figure>
+                <figcaption>Logo header</figcaption>
+            </figure>
+        </label>
 
         <nav id="nav-desktop">
             <ul id="ul-desktop">
+                <li id="li-login">
+                    <a href="reserva.html">Reservas</a>
+                </li>
                 <li class="li-desktop">
-                    <a href=""> <i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
+                    <a href="agendamentos.html"> <i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
                 </li>
                 <li class="li-desktop">
                     <a href="">
@@ -41,6 +45,17 @@
             </ul>
         </nav>
     </header>
+
+    <div class="mensagem">
+        <div class="caixamensagem">
+            <h1>Sair</h1>
+            <p>Deseja sair da plataforma?</p>
+            <div class="modal-buttons">
+                <label for="mensagem-toggle" class="btncancelar">Cancelar</label>
+                <a href="index.html" class="btnsair">Sair</a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section id="section-reserva">
@@ -151,6 +166,90 @@
                             </article>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="container-1-2-reserva">
+                <figure class="figure-1-scheduling">
+                    <img src="./img/barbearia-mapa.png" alt="Mapa" id="mapimg-scheduling">
+                    <figcaption>Mapa</figcaption>
+                        <figure class="figure-1-2-scheduling">
+                            <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Barbearia Vintage barber" id="vinbarberimg-scheduling">
+                            <div id="containertxt-scheduling">
+                                <h2>Vintage Barber</h2>
+                                <p>Avenida São Sebastião, 357, São Pa...</p>
+                            </div>
+                            <figcaption>Barbearia Vintage Barber</figcaption>
+                        </figure>
+                </figure>
+
+                <div id="containerdesc-scheduling">
+                <h2>SOBRE NÓS</h2>
+                <p>Bem-vindo à Vintage Barber, onde tradição encontra estilo. Nossa equipe de mestres barbeiros transforma cortes de cabelo e barbas em obras de arte. Em um ambiente acolhedor, promovemos confiança, estilo e uma comunidade unida.</p>
+                </div>
+
+                <div>
+
+                </div>
+                <div class="containertel-scheduling">
+                    <div class="container-phone-scheduling">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <p id="tel-scheduling">(11) 98204-5108</p>
+                    </div>
+
+                    <button class="btn-default">Copiar</button>
+                </div>
+
+                <div id="containertel-scheduling">
+                    <div class="container-phone-scheduling">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <p id="tel-scheduling">(11) 99503-2351</p>
+                    </div>
+
+                    <button class="btn-default">Copiar</button>
+                </div>
+
+                <div id="containerbuy-scheduling">
+                    <div id="containercard-reserva">
+                        <div class="container-card-2-scheduling">
+                            <p>Segunda</p>
+                            <h2>Fechado</h2>
+                        </div>
+                        <div class="container-card-2-scheduling">
+                            <p>Terça-Feira</p>
+                            <h2>09:00 - 21:00</h2>
+                        </div>
+                        <div class="container-card-2-scheduling">
+                            <p>Quarta-Feira</p>
+                            <h2>09:00 - 21:00</h2>
+                        </div>
+                        <div class="container-card-2-scheduling">
+                            <p>Quinta-Feira</p>
+                            <h2>09:00 - 21:00</h2>
+                        </div>
+
+                        <div class="container-card-2-scheduling">
+                            <p>Sexta-Feira</p>
+                            <h2>09:00 - 21:00</h2>
+                        </div>
+
+                        <div class="container-card-2-scheduling">
+                            <p>Sábado</p>
+                            <h2>08:00 - 17:00</h2>
+                        </div>
+
+                        <div class="container-card-2-scheduling">
+                            <p>Domingo</p>
+                            <h2>Fechado</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="partnership-reserva">
+                    <p>Em parceria com</p>
+                    <figure>
+                        <img src="./img/Logo.png" alt="Logo da Barbearia" id="partnershipimg-reserva">
+                    </figure>
                 </div>
             </div>
         </section>

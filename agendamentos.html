@@ -13,13 +13,14 @@
 </head>
 
 <body id="body-scheduling">
-    <header id="header-desktop">
-        <figure>
-            <a href="index.html">
+    <input type="checkbox" id="mensagem-toggle" hidden>
+    <header id="header-login">
+        <label for="mensagem-toggle">
+            <figure>
                 <img src="./img/Logo.png" alt="Logo-header" id="logo-header-login">
-            </a>
-            <figcaption>Logo header</figcaption>
-        </figure>
+                <figcaption>Logo header</figcaption>
+            </figure>
+        </label>
 
         <div id="search-desktop">
             <input type="text" name="Buscar Barbearias" placeholder="Buscar Barbearias" id="input-desktop">
@@ -29,8 +30,11 @@
 
         <nav id="nav-desktop">
             <ul id="ul-desktop">
+                <li id="li-login">
+                    <a href="reserva.html">Reservas</a>
+                </li>
                 <li class="li-desktop">
-                    <a href=""><i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
+                    <a href="agendamentos.html"><i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
                 </li>
                 <li class="li-desktop">
                     <a href="">
@@ -47,6 +51,17 @@
             </ul>
         </nav>
     </header>
+
+    <div class="mensagem">
+        <div class="caixamensagem">
+            <h1>Sair</h1>
+            <p>Deseja sair da plataforma?</p>
+            <div class="modal-buttons">
+                <label for="mensagem-toggle" class="btncancelar">Cancelar</label>
+                <a href="index.html" class="btnsair">Sair</a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section id="section-scheduling">
@@ -185,15 +200,15 @@
                             <p>R$50,00</p>
                         </div>
                         <div class="container-card-2-scheduling">
-                            <p>Data</p>
+                            <p class="date-aside">Data</p>
                             <h2>22 de Julho</h2>
                         </div>
                         <div class="container-card-2-scheduling">
-                            <p>Horário</p>
+                            <p class="date-aside">Horário</p>
                             <h2>09:45</h2>
                         </div>
                         <div class="container-card-2-scheduling">
-                            <p>Barbearia</p>
+                            <p class="date-aside">Barbearia</p>
                             <h2>Vintage Barber</h2>
                         </div>
                     </div>

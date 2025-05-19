@@ -13,18 +13,22 @@
 </head>
 
 <body id="body-desktop">
-    <header id="header-desktop">
-        <figure>
-            <a href="index.html">
+    <input type="checkbox" id="mensagem-toggle" hidden>
+    <header id="header-login">
+        <label for="mensagem-toggle">
+            <figure>
                 <img src="./img/Logo.png" alt="Logo-header" id="logo-header-login">
-            </a>
-            <figcaption>Logo header</figcaption>
-        </figure>
+                <figcaption>Logo header</figcaption>
+            </figure>
+        </label>
 
         <nav id="nav-desktop">
             <ul id="ul-desktop">
+                <li id="li-login">
+                    <a href="reserva.html">Reservas</a>
+                </li>
                 <li class="li-desktop">
-                    <a href=""> <i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
+                    <a href="agendamentos.html"> <i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
                 </li>
                 <li class="li-desktop">
                     <a href="">
@@ -35,12 +39,163 @@
                                 Perfil
                             </figcaption>
                         </figure>
-                        João Vitor Rodrigues Costa Tavares
+                        <p id="name-desktop">João Vitor Rodrigues Costa Tavares</p>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <div class="mensagem">
+        <div class="caixamensagem">
+            <h1>Sair</h1>
+            <p>Deseja sair da plataforma?</p>
+            <div class="modal-buttons">
+                <label for="mensagem-toggle" class="btncancelar">Cancelar</label>
+                <a href="index.html" class="btnsair">Sair</a>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="toggle-menu" hidden>
+
+    <aside class="container-aside">
+        <div id="menu-aside">
+            <div id="header-aside">
+                <h2>Fazer Reserva</h2>
+                <label for="toggle-menu">
+                    <figure>
+                        <img src="./img/closeX.svg" alt="Fechar">
+                        <figcaption>Fechar</figcaption>
+                    </figure>
+                </label>
+            </div>
+
+            <div id="calendar-aside">
+                <div id="monthchevron-aside">
+                    <h2>Fevereiro</h2>
+                    <div id="chevron-aside">
+                        <figure>
+                            <a href="#">
+                                <img src="./img/Chevron_left.svg" alt="divisa-esquerda" id="chevron-left">
+                            </a>
+                            <figcaption>divisa-esquerda</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="./img/Chevron_right.svg" alt="divisa-direita" id="chevron-right">
+                            </a>
+                            <figcaption>divisa-direita</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div id="month-aside">
+                    <div id="week-aside">
+                        <p>Su</p>
+                        <p>Mo</p>
+                        <p>Tu</p>
+                        <p>We</p>
+                        <p>Th</p>
+                        <p>Fr</p>
+                        <p>Sa</p>
+                    </div>
+
+                    <div id="days-aside">
+                        <div class="rowdays-aside">
+                            <p class="days-aside">28</p>
+                            <p class="days-aside">29</p>
+                            <p class="days-aside">30</p>
+                            <p class="days-aside">31</p>
+                            <p class="days-aside">1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+
+                        <div class="row-aside">
+                            <p>4</p>
+                            <p>5</p>
+                            <p id="days6-aside">6</p>
+                            <p>7</p>
+                            <p>8</p>
+                            <p>9</p>
+                            <p>10</p>
+                        </div>
+
+                        <div class="row-aside">
+                            <p>11</p>
+                            <p>12</p>
+                            <p>13</p>
+                            <p>14</p>
+                            <p>15</p>
+                            <p>16</p>
+                            <p>17</p>
+                        </div>
+
+                        <div class="row-aside">
+                            <p>18</p>
+                            <p>19</p>
+                            <p>20</p>
+                            <p>21</p>
+                            <p>22</p>
+                            <p>23</p>
+                            <p>24</p>
+                        </div>
+
+                        <div class="row-aside">
+                            <p>25</p>
+                            <p>26</p>
+                            <p>27</p>
+                            <p>28</p>
+                            <p>29</p>
+                            <p class="samedays-aside">1</p>
+                            <p class="samedays-aside">2</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hourcontainer-aside">
+                    <p class="hour-aside">
+                        09:00
+                    </p>
+                    <p id="hours-aside">
+                        09:45
+                    </p>
+                    <p class="hour-aside">
+                        10:30
+                    </p>
+                    <p class="hour-aside">
+                        11:15
+                    </p>
+                    <p class="hour-aside">
+                        10:00
+                    </p>
+                </div>
+
+                <div id="containercard-aside">
+                    <div id="containercard-scheduling">
+                        <div id="container-card-1-scheduling">
+                            <p>Corte de Cabelo</p>
+                            <p>R$50,00</p>
+                        </div>
+                        <div class="container-card-2-scheduling">
+                            <p class="date-aside">Data</p>
+                            <p class="datemonth-aside">06 de Fevereiro</p>
+                        </div>
+                        <div class="container-card-2-scheduling">
+                            <p class="date-aside">Horário</p>
+                            <p class="datemonth-aside">09:45</p>
+                        </div>
+                        <div class="container-card-2-scheduling">
+                            <p class="date-aside">Barbearia</p>
+                            <p class="datemonth-aside">Vintage Barber</p>
+                        </div>
+                    </div>
+                    <button id="button-aside">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </aside>
 
     <main>
         <section id="section-desktop">
@@ -63,8 +218,7 @@
                             <p id="confir-desktop">Confirmado</p>
                             <h2>Corte de Cabelo</h2>
                             <figure id="figure-desktop">
-                                <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Logo"
-                                    id="barberimg-desktop">
+                                <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Logo" id="barberimg-desktop">
                                 <figcaption>Logo</figcaption>
                                 <p id="barberp-desktop">Vintage Barber</p>
                             </figure>
@@ -96,17 +250,14 @@
                             <h2>Vintage Barber</h2>
                             <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                         </figure>
-                        <div class="containerbutton-desktop">
-                            <button class="button-desktop">
-                                <a href="" class="link-desktop">Reservar</a>
-                            </button>
-                        </div>
+                        <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                     </article>
 
                     <article class="article-1-desktop">
                         <figure class="figure-2-desktop">
-                            <img src="./img/barbearia-1-2.jpg" alt="Barbearia Homem Elegante"
-                                id="imgbarber-2-desktop">
+                            <img src="./img/barbearia-1-2.jpg" alt="Barbearia Homem Elegante" id="imgbarber-2-desktop">
                             <div class="rating-desktop">
                                 <i class="fa-solid fa-star"></i>
                                 <p class="fiverating-desktop">5,0</p>
@@ -117,17 +268,14 @@
                             <h2>Homem Elegante</h2>
                             <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                         </figure>
-                        <div class="containerbutton-desktop">
-                            <button class="button-desktop">
-                                <a href="" class="link-desktop">Reservar</a>
-                            </button>
-                        </div>
+                        <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                     </article>
 
                     <article class="article-1-desktop">
                         <figure class="figure-2-desktop">
-                            <img src="./img/barbearia-2-2.jpg" alt="Barbearia Clássica Cortez"
-                                id="imgbarber-3-desktop">
+                            <img src="./img/barbearia-2-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                             <div class="rating-desktop">
                                 <i class="fa-solid fa-star"></i>
                                 <p class="fiverating-desktop">5,0</p>
@@ -138,11 +286,9 @@
                             <h2>Clássica Cortez</h2>
                             <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                         </figure>
-                        <div class="containerbutton-desktop">
-                            <button class="button-desktop">
-                                <a href="" class="link-desktop">Reservar</a>
-                            </button>
-                        </div>
+                        <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                     </article>
                 </section>
             </div>
@@ -162,14 +308,12 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
@@ -183,14 +327,12 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
@@ -204,20 +346,17 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-5-2.jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-5-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -225,20 +364,17 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-12-2..jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-12-2..jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -246,14 +382,12 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                   <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
             </div>
         </section>
@@ -263,8 +397,7 @@
             <div id="container-1-2-desktop">
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-17-2.jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-17-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -272,20 +405,17 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-4-2.jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-4-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -293,20 +423,17 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-7-2.jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-7-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -314,20 +441,17 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-14-2.jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-14-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -335,20 +459,17 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
 
                 <article class="article-1-desktop">
                     <figure class="figure-2-desktop">
-                        <img src="./img/barbearia-16-2.jpg" alt="Barbearia Clássica Cortez"
-                            id="imgbarber-3-desktop">
+                        <img src="./img/barbearia-16-2.jpg" alt="Barbearia Clássica Cortez" id="imgbarber-3-desktop">
                         <div class="rating-desktop">
                             <i class="fa-solid fa-star"></i>
                             <p class="fiverating-desktop">5,0</p>
@@ -356,14 +477,12 @@
                         <figcaption>
                             Barbearia Clássica Cortez
                         </figcaption>
-                        <h2>Clássica Cortez</h2>
+                        <h2>Vintage Barber</h2>
                         <p class="p-figure-desktop">Avenida São Sebastião, 357. São <br> Paulo</p>
                     </figure>
-                    <div class="containerbutton-desktop">
-                        <button class="button-desktop">
-                            <a href="" class="link-desktop">Reservar</a>
-                        </button>
-                    </div>
+                    <label for="toggle-menu" class="containerbutton-desktop">
+                            Reservar
+                        </label>
                 </article>
             </div>
         </section>
