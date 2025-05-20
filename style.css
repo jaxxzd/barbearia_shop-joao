@@ -31,17 +31,15 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5vw;
     width: 100%;
     height: 71px;
-    padding: 28px 8%;
+    padding: 28px 12%;
     font-family: "Nunito", sans-serif;
     font-size: 1.4rem;
 }
 
 #logo-header-login {
-    width: 13rem;
-    height: 2.2rem;
+    height: 22px;
     object-fit: contain;
     display: flex;
     justify-content: space-between;
@@ -56,7 +54,7 @@ figcaption {
 }
 
 .li-login {
-    font-size: .8em;
+    font-size: 1.2em;
     font-weight: 700;
     line-height: 140%;
 }
@@ -75,8 +73,10 @@ figcaption {
 }
 
 #li-login a {
-    color: black;
-    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
     background-color: #8162FF;
     color: #FFFFFF;
     border: 1px solid #0000007A;
@@ -111,8 +111,7 @@ figcaption {
 }
 
 #logo-login {
-    width: 24.2rem;
-    height: 6.4rem;
+    height: 44.98px;
     object-fit: contain;
 }
 
@@ -120,8 +119,9 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28.6rem;
-    height: 9.2rem;
+    text-align: center;
+    width: 30vw;
+    height: 12vh;
     outline: none;
     border: none;
     background-color: #8162FF;
@@ -137,8 +137,8 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 28.6rem;
-    height: 9.2rem;
+    width: 30vw;
+    height: 12vh;
     outline: none;
     border: none;
     background-color: #8162FF;
@@ -168,10 +168,10 @@ figcaption {
     align-items: center;
     width: 100%;
     height: 10vh;
-    padding: 28px 3%;
+    padding: 24px 5%;
     font-family: "Nunito", sans-serif;
     font-size: 1.4rem;
-    border-bottom: 1px solid rgb(51, 51, 51);
+    border-bottom: 1px solid #26272B;
 }
 
 #ul-desktop {
@@ -182,7 +182,7 @@ figcaption {
 }
 
 .li-desktop {
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 700;
     line-height: 140%;
 }
@@ -209,6 +209,19 @@ figcaption {
     padding: 10px 10px;
 }
 
+#li-login-reserva a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1.2vw;
+    background-color: #8162FF;
+    border: 1px solid #0000007A;
+    border-radius: 12px;
+    padding: 10px 10px;
+    transition: .3s ease;
+}
+
 #perfil-desktop {
     width: 3vw;
     height: 6vh;
@@ -227,6 +240,8 @@ figcaption {
     z-index: 1;
     display: flex;
     justify-content: space-between;
+    gap: 12px;
+    align-items: center;
     padding: 5vw;
 }
 
@@ -247,7 +262,7 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 46px;
+    gap: 32px;
 }
 
 #title-desktop {
@@ -281,9 +296,7 @@ figcaption {
 }
 
 #input-desktop {
-    max-width: 39.1rem;
-    min-width: 20%;
-    width: 80%;
+    width: 10vw;
     height: 3.6rem;
     border: none;
     outline: none;
@@ -325,7 +338,7 @@ figcaption {
 }
 
 #scheduling-desktop {
-    width: 37vw;
+    width: 30vw;
     height: 18vh;
     background-color: #1A1B1F;
     border-radius: 10px;
@@ -343,7 +356,7 @@ figcaption {
 }
 
 #confir-desktop {
-    width: 81px;
+    width: 8vw;
     height: 21px;
     border-radius: 100px;
     padding: 10px;
@@ -353,7 +366,7 @@ figcaption {
     align-items: center;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1vw;
     line-height: 140%;
     color: #8162FF;
 }
@@ -361,7 +374,7 @@ figcaption {
 #barber-desktop h2 {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.4rem;
     line-height: 140%;
     color: #FFFFFF;
 }
@@ -375,13 +388,14 @@ figcaption {
 #barberimg-desktop {
     width: 24px;
     height: 24px;
+    object-fit: contain;
     border-radius: 50%;
 }
 
 #barberp-desktop {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: .8rem;
     color: #FFFFFF;
 }
 
@@ -399,7 +413,7 @@ figcaption {
 
 #date-desktop p {
     font-family: "Nunito", sans-serif;
-    font-size: 1.2em;
+    font-size: 1vw;
     font-weight: 400;
     line-height: 140%;
     color: #FFFFFF;
@@ -407,7 +421,7 @@ figcaption {
 
 #date-desktop h2 {
     font-family: "Nunito", sans-serif;
-    font-size: 2.4em;
+    font-size: 1vw;
     font-weight: 400;
     line-height: 120%;
     color: #FFFFFF;
@@ -417,7 +431,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
 }
 
 #recommended-desktop {
@@ -428,6 +442,36 @@ figcaption {
     color: #838896;
 }
 
+#carrousel-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrosel-chevron {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4vw;
+    height: 8vh;
+    border: 2px solid #26272B;
+    background-color: #141518;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.carrosel-2-chevron {
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    width: 4vw;
+    height: 8vh;
+    border: 2px solid #26272B;
+    background-color: #141518;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
 #section-2-desktop {
     display: flex;
     justify-content: center;
@@ -436,7 +480,7 @@ figcaption {
 }
 
 .article-1-desktop {
-    width: 15vw;
+    width: 12vw;
     height: auto;
     border-radius: 16px;
     background-color: #1A1B1F;
@@ -451,21 +495,7 @@ figcaption {
     gap: 4px;
 }
 
-#imgbarber-1-desktop {
-    width: 100%;
-    height: 20vh;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
-#imgbarber-2-desktop {
-    width: 100%;
-    height: 20vh;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
-#imgbarber-3-desktop {
+.figure-2-desktop img {
     width: 100%;
     height: 20vh;
     border-radius: 16px;
@@ -473,7 +503,7 @@ figcaption {
 }
 
 .rating-desktop {
-    transform: translate(-1%, -515%);
+    transform: translate(10%, -500%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -497,10 +527,9 @@ figcaption {
 .figure-2-desktop h2 {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 1.2em;
     color: #FFFFFF;
-    padding-left: 7px;
-    padding-top: 10px;
+    padding-left: 2px;
 }
 
 .p-figure-desktop {
@@ -508,7 +537,7 @@ figcaption {
     font-weight: 400;
     font-size: 1em;
     color: #838896;
-    padding-left: 7px;
+    padding-left: 2px;
 }
 
 .containerbutton-desktop {
@@ -528,29 +557,12 @@ figcaption {
     transition: .3s ease;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2em;
     line-height: 140%;
     color: #FFFFFF;
 }
 
 .containerbutton-desktop:hover {
-    opacity: .7;
-}
-
-.button-desktop {
-    width: 90%;
-    height: 5.5vh;
-    background-color: #26272B;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.button-desktop:hover {
     opacity: .7;
 }
 
@@ -569,8 +581,9 @@ figcaption {
 
 #container-1-2-desktop {
     display: flex;
-    flex-wrap: wrap;
-    gap: 60px 30px;
+    align-items: center;
+    gap: 60px 20px;
+    position: relative;
 }
 
 #footer-desktop {
@@ -606,7 +619,7 @@ figcaption {
 #name-scheduling {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .8em;
     line-height: 140%;
 }
 
@@ -614,7 +627,6 @@ figcaption {
 #section-scheduling {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     padding: 5vw 12vw;
 }
 
@@ -623,6 +635,19 @@ figcaption {
     flex-direction: column;
     padding-bottom: 10px;
     font-family: "Nunito", sans-serif;
+}
+
+#li-login-scheduling a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    background-color: #8162FF;
+    color: #FFFFFF;
+    border: 1px solid #0000007A;
+    border-radius: 12px;
+    padding: 10px 10px;
+    transition: .3s ease;
 }
 
 #title-scheduling {
@@ -649,7 +674,7 @@ figcaption {
 }
 
 .scheduling-card {
-    width: 37vw;
+    width: 30vw;
     height: 18vh;
     background-color: #1A1B1F;
     border-radius: 10px;
@@ -676,7 +701,7 @@ figcaption {
     align-items: center;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1vw;
     line-height: 140%;
     color: #838896;
 }
@@ -684,7 +709,7 @@ figcaption {
 .subtitle-scheduling {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1vw;
     line-height: 140%;
     color: #FFFFFF;
 }
@@ -703,14 +728,14 @@ figcaption {
 }
 
 .date-card p {
-    font-size: 1.2em;
+    font-size: 1vw;
     font-weight: 400;
     line-height: 140%;
 }
 
 .date-card h2 {
     font-weight: 400;
-    font-size: 2.4em;
+    font-size: 1vw;
     line-height: 120%;
 }
 
@@ -719,7 +744,7 @@ figcaption {
     flex-direction: column;
     gap: 12px;
     background-color: #1A1B1F;
-    width: 100%;
+    width: 40%;
     height: 100%;
     border-radius: 16px;
     padding: 20px;
@@ -902,7 +927,7 @@ figcaption {
 
 .datemonth-aside {
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 1.2vh;
     line-height: 140%;
     color: #FFFFFF;
 }
