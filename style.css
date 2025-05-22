@@ -9,10 +9,6 @@
     font-family: "Nunito", sans-serif;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 figcaption {
     display: none;
 }
@@ -34,8 +30,8 @@ figcaption {
     width: 100%;
     height: 71px;
     padding: 28px 12%;
+    gap: 30px;
     font-family: "Nunito", sans-serif;
-    font-size: 1.4rem;
 }
 
 #logo-header-login {
@@ -54,7 +50,7 @@ figcaption {
 }
 
 .li-login {
-    font-size: 1.2em;
+    font-size: 0, 875rem;
     font-weight: 700;
     line-height: 140%;
 }
@@ -76,12 +72,18 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    width: 85px;
+    height: 36px;
+    font-weight: 700;
+    line-height: 140%;
+    font-size: 0, 875rem;
     background-color: #8162FF;
     color: #FFFFFF;
-    border: 1px solid #0000007A;
-    border-radius: 12px;
-    padding: 10px 10px;
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
     transition: .3s ease;
 }
 
@@ -103,16 +105,16 @@ figcaption {
     justify-content: space-between;
     align-items: center;
     border-radius: 30px;
-    width: 50vw;
-    height: 80%;
+    width: 70vw;
+    height: 498px;
     margin-top: 10rem;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
 #logo-login {
-    height: 44.98px;
-    object-fit: contain;
+    width: 242px;
+    height: 64.98px;
 }
 
 .txt-dft {
@@ -120,8 +122,8 @@ figcaption {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30vw;
-    height: 12vh;
+    width: 50%;
+    height: 92px;
     outline: none;
     border: none;
     background-color: #8162FF;
@@ -137,8 +139,8 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vw;
-    height: 12vh;
+    width: 50%;
+    height: 92px;
     outline: none;
     border: none;
     background-color: #8162FF;
@@ -155,7 +157,7 @@ figcaption {
     opacity: .7;
 }
 
-/* Desktop */ 
+/* Desktop */
 
 #body-desktop {
     background-color: #141518;
@@ -166,28 +168,37 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 10vh;
-    padding: 24px 5%;
+    height: 96px;
+    padding: 24px 8%;
     font-family: "Nunito", sans-serif;
-    font-size: 1.4rem;
     border-bottom: 1px solid #26272B;
 }
 
 #ul-desktop {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
 }
 
 .li-desktop {
-    font-size: 1vw;
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 140%;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #ul-desktop {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .li-desktop a {
+    height: 100%;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -222,13 +233,18 @@ figcaption {
     transition: .3s ease;
 }
 
+#name-desktop {
+    cursor: pointer;
+}
+
 #perfil-desktop {
-    width: 3vw;
-    height: 6vh;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
     color: #D9D9D9;
     border-radius: 50%;
 }
+
 #section-desktop {
     background-image: url(./img/imagemdefundo-desktop.jpg);
     background-repeat: no-repeat;
@@ -241,8 +257,8 @@ figcaption {
     display: flex;
     justify-content: space-between;
     gap: 12px;
+    padding: 24px 8%;
     align-items: center;
-    padding: 5vw;
 }
 
 #section-desktop::before {
@@ -257,12 +273,22 @@ figcaption {
     opacity: 90%;
 }
 
+@media (min-width: 768px) {
+    #section-desktop #container-desktop {
+        margin: 0;
+        align-items: flex-start;
+        text-align: start;
+    }
+}
+
 #container-desktop {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 32px;
+    margin: 0 auto;
 }
 
 #title-desktop {
@@ -270,7 +296,7 @@ figcaption {
 }
 
 #title-desktop h1 {
-    font-size: 2.4em;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 120%;
     font-family: "Nunito", sans-serif;
@@ -278,11 +304,11 @@ figcaption {
 
 #title-desktop span {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 
 #title-desktop p {
-    font-size: 1em;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 140%;
     font-family: "Nunito", sans-serif;
@@ -295,12 +321,26 @@ figcaption {
     gap: 8px;
 }
 
+@media (min-width: 768px) {
+    #search-desktop #input-desktop {
+        width: 391px;
+        height: 2.25rem;
+        border: none;
+        outline: none;
+        padding-left: .5rem;
+        background-color: #1A1B1F;
+        border-radius: 8px;
+        border: 1px solid #26272B;
+        color: gray;
+    }
+}
+
 #input-desktop {
-    width: 10vw;
-    height: 3.6rem;
+    width: 175px;
+    height: 2.25rem;
     border: none;
     outline: none;
-    padding-left: 1rem;
+    padding-left: .5rem;
     background-color: #1A1B1F;
     border-radius: 8px;
     border: 1px solid #26272B;
@@ -308,8 +348,8 @@ figcaption {
 }
 
 .fa-magnifying-glass {
-    width: 3.4rem;
-    height: 3.6rem;
+    width: 2.25rem;
+    height: 2.125rem;
     padding-top: 12px;
     background-color: #8162FF;
     border-radius: 8px;
@@ -332,41 +372,66 @@ figcaption {
 
 #agenda-desktop {
     font-family: "Nunito", sans-serif;
-    font-size: 1.4rem;
+    font-size: 0.875rem;
     line-height: 140%;
     color: #838896;
 }
 
+@media (min-width: 768px) {
+    #container-desktop #appointments-desktop #scheduling-desktop {
+        width: 439px;
+        height: 111px;
+        background-color: #1A1B1F;
+        border-radius: 10px;
+        border: 1px solid #26272B;
+        padding: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 #scheduling-desktop {
-    width: 30vw;
-    height: 18vh;
+    width: 219.5px;
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #1A1B1F;
     border-radius: 10px;
     border: 1px solid #26272B;
-    padding: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+@media (min-width: 768px) {
+    #appointments-desktop #scheduling-desktop #barber-desktop {
+        align-items: flex-start;
+    }
 }
 
 #barber-desktop {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+    padding: 4px;
 }
 
 #confir-desktop {
-    width: 8vw;
+    width: 81px;
     height: 21px;
     border-radius: 100px;
-    padding: 10px;
     background-color: #221C3D;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Nunito", sans-serif;
+}
+
+#confirtxt-desktop {
+    width: 65px;
+    height: 17px;
     font-weight: 700;
-    font-size: 1vw;
+    font-size: 0.75rem;
     line-height: 140%;
     color: #8162FF;
 }
@@ -374,7 +439,7 @@ figcaption {
 #barber-desktop h2 {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 140%;
     color: #FFFFFF;
 }
@@ -388,32 +453,43 @@ figcaption {
 #barberimg-desktop {
     width: 24px;
     height: 24px;
-    object-fit: contain;
-    border-radius: 50%;
+    border-radius: 100px;
 }
 
-#barberp-desktop {
+.barberp-desktop {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: .8rem;
+    font-size: 0.875rem;
     color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+    #scheduling-desktop #date-desktop {
+        width: 106px;
+        height: 111px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-left: 1px solid #26272B;
+    }
+}
+
 #date-desktop {
-    width: 7vw;
-    height: 18vh;
-    padding: 25px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border-left: 1px solid #26272B;
+    border-top: 1px solid #26272B;
 }
 
 #date-desktop p {
     font-family: "Nunito", sans-serif;
-    font-size: 1vw;
+    font-size: 0.75rem;
     font-weight: 400;
     line-height: 140%;
     color: #FFFFFF;
@@ -421,43 +497,73 @@ figcaption {
 
 #date-desktop h2 {
     font-family: "Nunito", sans-serif;
-    font-size: 1vw;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 120%;
     color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+    #section-desktop #container-2-desktop {
+        width: 617px;
+        height: 335px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    #container-2-desktop #recommended-desktop {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+        color: #838896;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
 #container-2-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
+    display: none;
 }
 
 #recommended-desktop {
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 140%;
-    color: #838896;
+    display: none;
+}
+
+#containerscroll-desktop {
+    width: 617px;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #carrousel-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: scroll;
+    overflow: hidden;
+    position: relative;
 }
 
 .carrosel-chevron {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 4vw;
-    height: 8vh;
+    width: 55px;
+    height: 55px;
     border: 2px solid #26272B;
     background-color: #141518;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 999;
 }
 
 .carrosel-2-chevron {
@@ -470,6 +576,7 @@ figcaption {
     background-color: #141518;
     border-radius: 50px;
     cursor: pointer;
+    z-index: 1;
 }
 
 #section-2-desktop {
@@ -480,8 +587,8 @@ figcaption {
 }
 
 .article-1-desktop {
-    width: 12vw;
-    height: auto;
+    width: 220.8px;
+    height: 295px;
     border-radius: 16px;
     background-color: #1A1B1F;
     border: 1px solid #26272B;
@@ -493,51 +600,58 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     gap: 4px;
+    position: relative;
 }
 
 .figure-2-desktop img {
     width: 100%;
-    height: 20vh;
+    height: 159px;
     border-radius: 16px;
     object-fit: cover;
 }
 
 .rating-desktop {
-    transform: translate(10%, -500%);
+    position: absolute;
+    top: 4px;
+    left: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
     background-color: #221C3DB2;
-    width: 5rem;
-    height: 2.5rem;
+    width: 54px;
+    height: 25px;
     border-radius: 16px;
     margin-left: 2px;
 }
 
 .fa-star {
     color: #8162FF;
+    font-size: 0.75rem;
 }
 
 .fiverating-desktop {
     font-family: "Nunito", sans-serif;
     color: #FFFFFF;
+    font-size: 0.75rem;
 }
 
 .figure-2-desktop h2 {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1rem;
     color: #FFFFFF;
-    padding-left: 2px;
+    padding-left: 12px;
+    padding-top: .5rem;
 }
 
 .p-figure-desktop {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: .75rem;
     color: #838896;
-    padding-left: 2px;
+    padding-left: 12px;
+    padding-top: .5rem;
 }
 
 .containerbutton-desktop {
@@ -557,7 +671,7 @@ figcaption {
     transition: .3s ease;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: .875rem;
     line-height: 140%;
     color: #FFFFFF;
 }
@@ -567,22 +681,46 @@ figcaption {
 }
 
 #section-1-2-desktop {
-    padding: 28px 5%;
+    padding: 24px 8%;
+}
+
+@media (min-width: 768px) {
+    #section-1-2-desktop #title-1-2-desktop {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        text-align: start;
+    }
 }
 
 #title-1-2-desktop {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 120%;
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #section-1-2-desktop #container-1-2-desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+    }
 }
 
 #container-1-2-desktop {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 60px 20px;
+    gap: 20px;
     position: relative;
 }
 
@@ -595,6 +733,7 @@ figcaption {
     align-items: center;
     color: #838896;
     font-family: "Nunito", sans-serif;
+    margin-top: 165px;
 }
 
 #txt-desktop {
@@ -608,7 +747,8 @@ figcaption {
     font-size: 12px;
     line-height: 140%;
 }
-/* Agendamentos */ 
+
+/* Agendamentos */
 
 #body-scheduling {
     background-color: #141518;
@@ -616,18 +756,96 @@ figcaption {
     height: 100vh;
 }
 
+@media (min-width: 768px) {
+    #body-scheduling #header-scheduling {
+        width: 100%;
+        height: 96px;
+        background-color: #141518;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-right: 128px;
+        padding-bottom: 30px;
+        padding-left: 128px;
+        border-bottom: 1px solid #26272B;
+    }
+}
+
+@media (min-width: 768px) {
+    #header-scheduling #search-scheduling {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+#header-scheduling {
+    width: 100%;
+    height: 96px;
+    background-color: #141518;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid #26272B;
+}
+
+#search-scheduling {
+    display: none;
+}
+
+#input-scheduling {
+    width: 535px;
+    height: 2.25rem;
+    border: none;
+    outline: none;
+    padding-left: .5rem;
+    background-color: #1A1B1F;
+    border-radius: 8px;
+    border: 1px solid #26272B;
+    color: gray;
+}
+
 #name-scheduling {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: .8em;
+    font-size: 1rem;
     line-height: 140%;
 }
 
+@media (min-width: 768px) {
+    #main-scheduling #section-scheduling {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 40px;
+        padding-right: 256px;
+        padding-bottom: 40px;
+        padding-left: 256px;
+    }
+}
 
 #section-scheduling {
     display: flex;
-    justify-content: space-between;
-    padding: 5vw 12vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    #section-scheduling #container-scheduling {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+    }
 }
 
 #container-scheduling {
@@ -635,24 +853,12 @@ figcaption {
     flex-direction: column;
     padding-bottom: 10px;
     font-family: "Nunito", sans-serif;
-}
-
-#li-login-scheduling a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1vw;
-    background-color: #8162FF;
-    color: #FFFFFF;
-    border: 1px solid #0000007A;
-    border-radius: 12px;
-    padding: 10px 10px;
-    transition: .3s ease;
+    margin: 0 auto;
 }
 
 #title-scheduling {
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 1.5rem;
     line-height: 120%;
     color: #FFFFFF;
     padding-bottom: 10px;
@@ -661,7 +867,7 @@ figcaption {
 .confir-scheduling {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 2vh;
+    font-size: 0.75rem;
     line-height: 140%;
     color: #838896;
     padding-bottom: 10px;
@@ -673,22 +879,62 @@ figcaption {
     flex-direction: column;
 }
 
+@media (min-width: 768px) {
+    #section-scheduling #container-scheduling .scheduling-card {
+        width: 444px;
+        height: 111px;
+        background-color: #1A1B1F;
+        border-radius: 10px;
+        border: 1px solid #26272B;
+        padding: 6px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+}
+
 .scheduling-card {
-    width: 30vw;
-    height: 18vh;
+    width: 222px;
+    height: 200px;
     background-color: #1A1B1F;
     border-radius: 10px;
     border: 1px solid #26272B;
     padding: 6px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .appointments-card {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+#confir-scheduling {
+    width: 81px;
+    height: 21px;
+    border-radius: 100px;
+    background-color: #221C3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    margin: 0 auto;
+}
+
+#confirtxt-scheduling {
+    width: 65px;
+    height: 17px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 140%;
+    color: #8162FF;
 }
 
 .finished-scheduling {
@@ -701,7 +947,7 @@ figcaption {
     align-items: center;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1vw;
+    font-size: 0.75rem;
     line-height: 140%;
     color: #838896;
 }
@@ -709,46 +955,93 @@ figcaption {
 .subtitle-scheduling {
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1vw;
+    font-size: 1rem;
     line-height: 140%;
     color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+    .scheduling-card .date-card {
+        width: 106px;
+        height: 111px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+        padding-right: 36px;
+        padding-bottom: 12px;
+        padding-left: 36px;
+        gap: 8px;
+        color: #FFFFFF;
+        font-family: "Nunito", sans-serif;
+        border-left: 1px solid #26272B;
+    }
+}
+
 .date-card {
-    width: 7vw;
-    height: 18vh;
+    width: 100%;
+    height: 111px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 12px;
+    padding-right: 36px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    margin-top: 7px;
     gap: 8px;
     color: #FFFFFF;
     font-family: "Nunito", sans-serif;
-    border-left: 1px solid #26272B;
+    border-top: 1px solid #26272B;
 }
 
 .date-card p {
-    font-size: 1vw;
+    font-size: 0.75rem;
     font-weight: 400;
     line-height: 140%;
 }
 
 .date-card h2 {
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1.5rem;
     line-height: 120%;
+}
+
+#container-1-2-main-scheduling {
+    display: flex;
+    gap: 10px;
+    width: 302px;
+    height: 816px;
+    padding-top: 76px;
+}
+
+@media (min-width: 768px) {
+    #section-scheduling .container-1-2-scheduling {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: #1A1B1F;
+        width: 444px;
+        height: 760px;
+        padding: 20px;
+        border-radius: 16px;
+    }
 }
 
 .container-1-2-scheduling {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 20px;
     background-color: #1A1B1F;
-    width: 40%;
-    height: 100%;
+    width: 252px;
+    height: 760px;
+    margin-bottom: 180px;
     border-radius: 16px;
-    padding: 20px;
-    margin-top: 5.5rem;
+    margin: 0 auto;
 }
 
 .figure-1-scheduling {
@@ -758,31 +1051,80 @@ figcaption {
     align-items: center;
 }
 
+@media (min-width: 768px) {
+    .figure-1-scheduling #mapimg-scheduling {
+        width: 404px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        position: relative;
+    }
+}
+
 #mapimg-scheduling {
-    width: 100%;
+    width: 222px;
+    height: 120px;
     object-fit: cover;
     border-radius: 8px;
     position: relative;
 }
 
+@media (min-width: 768px) {
+     .figure-1-scheduling .figure-1-2-scheduling {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        width: 306px;
+        height: 72px;
+        background-color: #1A1B1F;
+        border-radius: 8px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+}
+
 .figure-1-2-scheduling {
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 8px;
-    padding-left: 10px;
     position: absolute;
-    width: 20%;
-    height: 10%;
+    width: 153px;
+    height: 90px;
     background-color: #1A1B1F;
     border-radius: 8px;
-    margin-bottom: 15px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .figure-1-2-scheduling #vinbarberimg-scheduling {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 100px;
+    }
 }
 
 #vinbarberimg-scheduling {
-    width: 20%;
-    height: 5vh;
+    width: 32px;
+    height: 32px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 100px;
+}
+
+@media (min-width: 768px) {
+    .figure-1-2-scheduling #containertxt-scheduling h2 {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 140%;
+        text-align: start;
+    }
 }
 
 #containertxt-scheduling {
@@ -795,14 +1137,26 @@ figcaption {
 
 #containertxt-scheduling h2 {
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: .7rem;
     line-height: 140%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .figure-1-2-scheduling #containertxt-scheduling p {
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 140%;
+        width: 100%;
+    }
 }
 
 #containertxt-scheduling p {
     font-weight: 400;
-    font-size: .8vw;
+    font-size: 0.5rem;
     line-height: 140%;
+    width: 120px;
+    text-align: center;
 }
 
 #containerdesc-scheduling {
@@ -816,16 +1170,25 @@ figcaption {
 
 #containerdesc-scheduling h2 {
     font-weight: 700;
-    font-size: 2vh;
+    font-size: 0.875rem;
     line-height: 140%;
     color: #FFFFFF;
 }
 
 #containerdesc-scheduling p {
     font-weight: 400;
-    font-size: 1.8vh;
+    font-size: 0.875rem;
     line-height: 136%;
     color: #838896;
+}
+
+#container-call-scheduling {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid #26272B;
+    padding: 1rem
 }
 
 .containertel-scheduling {
@@ -835,43 +1198,42 @@ figcaption {
     color: #FFFFFF;
 }
 
-#containertel-scheduling { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFFFFF;
-    border-bottom: 1px solid #26272B;
-    padding-bottom: 1.8rem;
-}
-
 .container-phone-scheduling {
     font-family: "Nunito", sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    font-size: 1.4em;
+    gap: 12px;
+}
+
+@media (min-width: 768px) {
+    .container-phone-scheduling #tel-scheduling {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 140%;
+    }
 }
 
 .fa-mobile-button {
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 #tel-scheduling {
-    font-size: 1.4vh;
     font-weight: 400;
+    font-size: 0.65rem;
+    line-height: 140%;
 }
 
 .btn-default {
     background-color: #26272B;
-    width: 7.5rem;
-    height: 3.6rem;
+    width: 75px;
+    height: 36px;
     border: none;
     outline: none;
     border-radius: 10px;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 0.875rem;
     line-height: 140%;
     cursor: pointer;
     transition: .3s ease;
@@ -881,9 +1243,29 @@ figcaption {
     opacity: .7;
 }
 
+@media (min-width: 768px) {
+    #containerbuy-scheduling #containercard-scheduling {
+        margin: 0 auto;
+        width: 404px;
+        height: 142px;
+        margin-top: 12px;
+        background-color: #1A1B1F;
+        border: 1px solid #26272B;
+        border-radius: 10px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        font-family: "Nunito", sans-serif;
+    }
+}
+
 #containercard-scheduling {
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    width: 222px;
+    height: 142px;
+    margin-top: 12px;
     background-color: #1A1B1F;
     border: 1px solid #26272B;
     border-radius: 10px;
@@ -902,7 +1284,13 @@ figcaption {
     color: #FFFFFF;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    font-size: 1.5vh;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+#container-card-1-scheduling h2 {
+    font-weight: 700;
+    font-size: 0.875rem;
     line-height: 140%;
 }
 
@@ -913,41 +1301,47 @@ figcaption {
 
 .container-card-2-scheduling h2 {
     font-weight: 400;
+    font-size: 0.875rem;
     line-height: 140%;
     letter-spacing: 0%;
     color: #FFFFFF;
 }
 
-.date-aside {
+.container-card-2-scheduling p {
     font-weight: 400;
-    font-size: 1.6vh;
+    font-size: 0.875rem;
     line-height: 140%;
     color: #838896;
 }
 
-.datemonth-aside {
-    font-weight: 400;
-    font-size: 1.2vh;
-    line-height: 140%;
-    color: #FFFFFF;
-}
-
-.container-card-2-scheduling p {
-    font-weight: 400;
-    font-size: 1.6vh;
-    line-height: 140%;
+@media (min-width: 768px) {
+    .container-1-2-scheduling #btncancel-scheduling {
+        width: 404px;
+        height: 46px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: #EF4444;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 140%;
+        letter-spacing: 0%;
+        cursor: pointer;
+        transition: .3s ease;
+    }
 }
 
 #btncancel-scheduling {
-    width: 100%;
-    height: 36px;
+    width: 222px;
+    height: 46px;
     border-radius: 10px;
     border: none;
     outline: none;
     background-color: #EF4444;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 0.875rem;
     line-height: 140%;
     letter-spacing: 0%;
     cursor: pointer;
@@ -1220,12 +1614,12 @@ figcaption {
     justify-content: center;
     z-index: 999;
 }
- 
-#mensagem-toggle:checked ~ .mensagem{
+
+#mensagem-toggle:checked~.mensagem {
     display: flex;
 }
- 
-.caixamensagem{
+
+.caixamensagem {
     background-color: #141518;
     padding: 2rem;
     border-radius: 10px;
@@ -1234,13 +1628,13 @@ figcaption {
     width: 318px;
     height: 146px;
 }
- 
+
 .modal-buttons {
     margin-top: 1.5rem;
     display: flex;
     gap: 10px;
 }
- 
+
 .btnsair {
     background-color: #EF4444;
     color: white;
@@ -1258,15 +1652,15 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s ease; 
+    transition: .3s ease;
 }
 
 .btnsair:hover {
     opacity: .7;
 }
- 
+
 .btncancelar {
-    background-color: #26272B;   
+    background-color: #26272B;
     color: white;
     border-radius: 10px;
     cursor: pointer;
@@ -1288,8 +1682,8 @@ figcaption {
 .btncancelar:hover {
     opacity: .7;
 }
- 
- 
+
+
 .mensagem .caixamensagem p {
     margin-top: 1rem;
     color: #838896;
@@ -1297,7 +1691,7 @@ figcaption {
     font-size: 14px;
     line-height: 140%;
 }
- 
+
 .mensagem .caixamensagem h1 {
     color: #FFFFFF;
     font-weight: 700;
@@ -1317,18 +1711,32 @@ figcaption {
     display: flex;
     justify-content: flex-end;
     z-index: 999;
-     transition: .3s ease;
+    transition: .3s ease;
+    overflow-y: scroll;
 }
 
-#toggle-menu:checked + .container-aside {
+#toggle-menu:checked+.container-aside {
     right: 0;
+}
+
+@media (min-width: 768px) {
+    .container-aside #menu-aside {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        height: 1024px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        gap: 24px;
+        background-color: #141518;
+    }
 }
 
 #menu-aside {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 1,024px;
+    width: 100%;
+    height: 1024px;
     padding-top: 24px;
     padding-bottom: 24px;
     gap: 24px;
@@ -1340,23 +1748,22 @@ figcaption {
     justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
-    width: 100%;
-    height: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-bottom: 1px solid #26272B;
 }
 
 #header-aside h2 {
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     line-height: 140%;
 }
 
 #header-aside img {
-    width: 2rem;
-    height: 2rem;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -1366,9 +1773,17 @@ figcaption {
     border-radius: 16px;
 }
 
+#containermonth-aside {
+    width: 370px;
+    height: 284px;
+    border-radius: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 #calendar-aside h2 {
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 140%;
     color: #FFFFFF;
 }
@@ -1377,13 +1792,11 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 #chevron-aside {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 #chevron-left {
@@ -1411,12 +1824,14 @@ figcaption {
 }
 
 #month-aside {
-    width: 100%;
-    padding: 24px;
+    width: 330px;
+    height: 256px;
+    padding-top: 16px;
+    padding-right: 16px;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
-    font-size: 2vh;
+    font-size: 0.8rem;
 }
 
 #week-aside {
@@ -1435,7 +1850,7 @@ figcaption {
 #days-aside {
     display: flex;
     flex-direction: column;
-    padding-top: 8px;
+    padding-top: 16px;
     gap: 10px;
 }
 
@@ -1477,57 +1892,108 @@ figcaption {
 }
 
 #hourcontainer-aside {
-    width: 100%;
-    overflow: hidden;
+    width: 370px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-top: 1px solid #26272B;
     border-bottom: 1px solid #26272B;
     margin-bottom: 5px;
+    overflow-x: scroll;
+    overflow: hidden;
 }
 
 
 .hour-aside {
-    width: 6.9rem;
-    height: 3.6rem;
+    width: 69px;
+    height: 36px;
     border-radius: 50px;
     border: 1px solid #26272B;
     font-weight: 400;
-    font-size: 1.4vh;
+    font-size: 0.875rem;
     line-height: 140%;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.hour-aside:hover {
+    opacity: .7;
 }
 
 #hours-aside {
-    width: 7rem;
-    height: 3.6rem;
+    width: 70px;
+    height: 36px;
     border-radius: 50px;
     background-color: #8162FF;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.4vh;
+    font-size: 0.875rem;
     line-height: 140%;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#hours-aside:hover {
+    opacity: .7;
 }
 
 #containercard-aside {
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+}
+
+#container-card-1-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.container-card-2-aside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-card-2-aside p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 140%;
+    color: #838896;
+}
+
+.container-card-2-aside h3 {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 140%;
+    color: #FFFFFF;
 }
 
 #button-aside {
-    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
     height: 36px;
     padding-top: 8px;
     padding-right: 16px;
@@ -1539,7 +2005,7 @@ figcaption {
     outline: none;
     background-color: #8162FF;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 0.875rem;
     line-height: 140%;
     color: #FFFFFF;
     cursor: pointer;
@@ -1549,15 +2015,3 @@ figcaption {
 #button-aside:hover {
     opacity: .7;
 }
-
-
-
-
-
-
-
-
-
-
-
-

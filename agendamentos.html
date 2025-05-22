@@ -14,25 +14,24 @@
 
 <body id="body-scheduling">
     <input type="checkbox" id="mensagem-toggle" hidden>
-    <header id="header-login">
+    <header id="header-scheduling">
         <label for="mensagem-toggle">
             <figure>
-                <img src="./img/Logo.png" alt="Logo-header" id="logo-header-login">
+                <a href="desktop.html">
+                    <img src="./img/Logo.png" alt="Logo-header" id="logo-header-login">
+                </a>
                 <figcaption>Logo header</figcaption>
             </figure>
         </label>
 
-        <div id="search-desktop">
-            <input type="text" name="Buscar Barbearias" placeholder="Buscar Barbearias" id="input-desktop">
+        <div id="search-scheduling">
+            <input type="text" name="Buscar Barbearias" placeholder="Buscar Barbearias" id="input-scheduling">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
 
         <nav id="nav-desktop">
             <ul id="ul-desktop">
-                <li id="li-login-scheduling">
-                    <a href="reserva.html">Reservas</a>
-                </li>
                 <li class="li-desktop">
                     <a href="agendamentos.html"><i class="fa-solid fa-calendar-days"></i> Agendamentos</a>
                 </li>
@@ -45,7 +44,7 @@
                                 Perfil
                             </figcaption>
                         </figure>
-                        <p id="name-scheduling">João Vitor Rodrigues Costa Tavares</p>
+                        <p id="name-scheduling">João Tavares</p>
                     </a>
                 </li>
             </ul>
@@ -63,24 +62,26 @@
         </div>
     </div>
 
-    <main>
+    <main id="main-scheduling">
         <section id="section-scheduling">
             <div id="container-scheduling">
                 <h1 id="title-scheduling">Agendamentos</h1>
                 <p class="confir-scheduling">CONFIRMADOS</p>
 
-                <div id="scheduling-desktop">
-                    <div id="barber-desktop">
-                        <p id="confir-desktop">Confirmado</p>
-                        <h2>Corte de Cabelo</h2>
-                        <figure id="figure-desktop">
+                <div class="scheduling-card">
+                    <div class="appointments-card">
+                        <div id="confir-scheduling">
+                            <p id="confirtxt-scheduling">Confirmado</p>
+                        </div>
+                        <h2 class="subtitle-scheduling">Corte de Cabelo</h2>
+                        <figure id="figure-scheduling">
                             <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Logo" id="barberimg-desktop">
                             <figcaption>Logo</figcaption>
-                            <p id="barberp-desktop">Vintage Barber</p>
+                            <p class="barberp-desktop">Vintage Barber</p>
                         </figure>
                     </div>
 
-                    <div id="date-desktop">
+                    <div class="date-card">
                         <p>Fevereiro</p>
                         <h2>06</h2>
                         <p>09:45</p>
@@ -97,7 +98,7 @@
                             <figure id="figure-desktop">
                                 <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Logo" id="barberimg-desktop">
                                 <figcaption>Logo</figcaption>
-                                <p id="barberp-desktop">Vintage Barber</p>
+                                <p class="barberp-desktop">Vintage Barber</p>
                             </figure>
                         </div>
 
@@ -118,7 +119,7 @@
                             <figure id="figure-desktop">
                                 <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Logo" id="barberimg-desktop">
                                 <figcaption>Logo</figcaption>
-                                <p id="barberp-desktop">Vintage Barber</p>
+                                <p class="barberp-desktop">Vintage Barber</p>
                             </figure>
                         </div>
 
@@ -139,7 +140,7 @@
                             <figure id="figure-desktop">
                                 <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Logo" id="barberimg-desktop">
                                 <figcaption>Logo</figcaption>
-                                <p id="barberp-desktop">Vintage Barber</p>
+                                <p class="barberp-desktop">Vintage Barber</p>
                             </figure>
                         </div>
 
@@ -152,69 +153,75 @@
                 </div>
             </div>
 
-            <div class="container-1-2-scheduling">
-                <figure class="figure-1-scheduling">
-                    <img src="./img/barbearia-mapa.png" alt="Mapa" id="mapimg-scheduling">
-                    <figcaption>Mapa</figcaption>
+            <div id="container-1-2-main-scheduling">
+                <div class="container-1-2-scheduling">
+                    <figure class="figure-1-scheduling">
+                        <img src="./img/barbearia-mapa.png" alt="Mapa" id="mapimg-scheduling">
+                        <figcaption>Mapa</figcaption>
                         <figure class="figure-1-2-scheduling">
-                            <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Barbearia Vintage barber" id="vinbarberimg-scheduling">
+                            <img src="./img/barbearia-imagem-de-fundo.jpg" alt="Barbearia Vintage barber"
+                                id="vinbarberimg-scheduling">
                             <div id="containertxt-scheduling">
                                 <h2>Vintage Barber</h2>
                                 <p>Avenida São Sebastião, 357, São Pa...</p>
                             </div>
                             <figcaption>Barbearia Vintage Barber</figcaption>
                         </figure>
-                </figure>
+                    </figure>
 
-                <div id="containerdesc-scheduling">
-                <h2>SOBRE NÓS</h2>
-                <p>Bem-vindo à Vintage Barber, onde tradição encontra estilo. Nossa equipe de mestres barbeiros transforma cortes de cabelo e barbas em obras de arte. Em um ambiente acolhedor, promovemos confiança, estilo e uma comunidade unida.</p>
-                </div>
-
-                <div>
-
-                </div>
-                <div class="containertel-scheduling">
-                    <div class="container-phone-scheduling">
-                    <i class="fa-solid fa-mobile-button"></i>
-                    <p id="tel-scheduling">(11) 98204-5108</p>
+                    <div id="containerdesc-scheduling">
+                        <h2>SOBRE NÓS</h2>
+                        <p>Bem-vindo à Vintage Barber, onde tradição encontra estilo. Nossa equipe de mestres barbeiros
+                            transforma cortes de cabelo e barbas em obras de arte. Em um ambiente acolhedor, promovemos
+                            confiança, estilo e uma comunidade unida.</p>
                     </div>
 
-                    <button class="btn-default">Copiar</button>
-                </div>
+                    <div id="container-call-scheduling">
+                        <div class="containertel-scheduling">
+                            <div class="container-phone-scheduling">
+                                <i class="fa-solid fa-mobile-button"></i>
+                                <p id="tel-scheduling">(11) 98204-5108</p>
+                            </div>
 
-                <div id="containertel-scheduling">
-                    <div class="container-phone-scheduling">
-                    <i class="fa-solid fa-mobile-button"></i>
-                    <p id="tel-scheduling">(11) 99503-2351</p>
-                    </div>
+                            <button class="btn-default">Copiar</button>
+                        </div>
 
-                    <button class="btn-default">Copiar</button>
-                </div>
+                        <div class="containertel-scheduling">
+                            <div class="container-phone-scheduling">
+                                <i class="fa-solid fa-mobile-button"></i>
+                                <p id="tel-scheduling">(11) 99503-2351</p>
+                            </div>
 
-                <div id="containerbuy-scheduling">
-                    <p id="confir-desktop">Confirmado</p>
-                    <div id="containercard-scheduling">
-                        <div id="container-card-1-scheduling">
-                            <p>Corte de Cabelo</p>
-                            <p>R$50,00</p>
-                        </div>
-                        <div class="container-card-2-scheduling">
-                            <p class="date-aside">Data</p>
-                            <h2 class="datemonth-aside">22 de Julho</h2>
-                        </div>
-                        <div class="container-card-2-scheduling">
-                            <p class="date-aside">Horário</p>
-                            <h2 class="datemonth-aside">09:45</h2>
-                        </div>
-                        <div class="container-card-2-scheduling">
-                            <p class="date-aside">Barbearia</p>
-                            <h2 class="datemonth-aside">Vintage Barber</h2>
+                            <button class="btn-default">Copiar</button>
                         </div>
                     </div>
-                </div>
 
-                <button id="btncancel-scheduling">Cancelar Reserva</button>
+                    <div id="containerbuy-scheduling">
+                        <div id="confir-desktop">
+                            <p id="confirtxt-desktop">Confirmado</p>
+                        </div>
+                        <div id="containercard-scheduling">
+                            <div id="container-card-1-scheduling">
+                                <p>Corte de Cabelo</p>
+                                <p>R$50,00</p>
+                            </div>
+                            <div class="container-card-2-scheduling">
+                                <p class="date-aside">Data</p>
+                                <h2 class="datemonth-aside">22 de Julho</h2>
+                            </div>
+                            <div class="container-card-2-scheduling">
+                                <p class="date-aside">Horário</p>
+                                <h2 class="datemonth-aside">09:45</h2>
+                            </div>
+                            <div class="container-card-2-scheduling">
+                                <p class="date-aside">Barbearia</p>
+                                <h2 class="datemonth-aside">Vintage Barber</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="btncancel-scheduling">Cancelar Reserva</button>
+                </div>
             </div>
         </section>
     </main>
