@@ -228,7 +228,7 @@ figcaption {
     justify-content: space-between;
     align-items: center;
     height: 96px;
-    padding: 24px 8%;
+    padding: 24px 5%;
     font-family: "Nunito", sans-serif;
     border-bottom: 1px solid #26272B;
 }
@@ -284,7 +284,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    font-size: 1.2vw;
+    font-size: 12px;
     background-color: #8162FF;
     border: 1px solid #0000007A;
     border-radius: 12px;
@@ -302,6 +302,7 @@ figcaption {
     object-fit: contain;
     color: #D9D9D9;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #section-desktop {
@@ -310,13 +311,17 @@ figcaption {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 60vh;
+    height: 463px;
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 24px 8%;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    padding-top: 64px;
+    padding-right: 128px;
+    padding-bottom: 64px;
+    padding-left: 128px;
     align-items: center;
 }
 
@@ -569,7 +574,7 @@ figcaption {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 8px;
+        gap: 20px;
         display: flex;
     }
 }
@@ -625,24 +630,31 @@ figcaption {
     z-index: 999;
 }
 
+@media (min-width: 768px) {
+    #container-1-2-desktop .carrosel-2-chevron {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translate(-100%, -50%);
+        width: 55px;
+        height: 55px;
+        border: 2px solid #26272B;
+        background-color: #141518;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+
 .carrosel-2-chevron {
-    position: absolute;
-    top: 50%;
-    transform: translate(-100%, -50%);
-    width: 4vw;
-    height: 8vh;
-    border: 2px solid #26272B;
-    background-color: #141518;
-    border-radius: 50px;
-    cursor: pointer;
-    z-index: 1;
+    display: none;
 }
 
 #section-2-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .article-1-desktop {
@@ -663,7 +675,7 @@ figcaption {
 }
 
 .figure-2-desktop img {
-    width: 100%;
+    width: 213px;
     height: 159px;
     border-radius: 16px;
     object-fit: cover;
@@ -740,7 +752,12 @@ figcaption {
 }
 
 #section-1-2-desktop {
-    padding: 24px 8%;
+    padding-top: 40px;
+    padding-right: 64px;
+    padding-bottom: 40px;
+    padding-left: 64px;
+    overflow-x: scroll;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -768,16 +785,18 @@ figcaption {
 @media (min-width: 768px) {
     #section-1-2-desktop #container-1-2-desktop {
         display: flex;
-        flex-direction: row;
+        flex-flow: row;
         align-items: center;
         gap: 20px;
         position: relative;
     }
 }
 
+
 #container-1-2-desktop {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
     gap: 20px;
     position: relative;
@@ -872,6 +891,7 @@ figcaption {
     font-weight: 700;
     font-size: 1rem;
     line-height: 140%;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -1720,6 +1740,13 @@ figcaption {
 }
 
 /* Function itens */
+
+
+.label-modal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 .mensagem {
     position: fixed;
