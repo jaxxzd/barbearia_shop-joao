@@ -1927,11 +1927,10 @@ figcaption {
 }
 
 #containermonth-aside {
-    width: 370px;
+    width: 100%;
     height: 284px;
     border-radius: 16px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 24px;
 }
 
 #calendar-aside h2 {
@@ -1945,6 +1944,7 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 8px;
 }
 
 #chevron-aside {
@@ -1977,10 +1977,10 @@ figcaption {
 }
 
 #month-aside {
-    width: 330px;
+    width: 100%;
     height: 256px;
     padding-top: 16px;
-    padding-right: 16px;
+    padding-right: 24px;
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
@@ -2045,7 +2045,7 @@ figcaption {
 }
 
 #hourcontainer-aside {
-    width: 370px;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -2146,7 +2146,7 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 330px;
+    width: 100%;
     height: 36px;
     padding-top: 8px;
     padding-right: 16px;
