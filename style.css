@@ -612,9 +612,12 @@ figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: scroll;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
+}
+
+#carrousel-desktop::-webkit-scrollbar {
+    display: none;
 }
 
 .carrosel-chevron {
@@ -713,7 +716,7 @@ figcaption {
     font-size: 1rem;
     color: #FFFFFF;
     padding-left: 12px;
-    padding-top: .5rem;
+    padding-top: 4px;
 }
 
 .p-figure-desktop {
@@ -722,7 +725,7 @@ figcaption {
     font-size: .75rem;
     color: #838896;
     padding-left: 12px;
-    padding-top: .5rem;
+    padding-top: 4px;
 }
 
 .containerbutton-desktop {
@@ -730,8 +733,8 @@ figcaption {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 90%;
-    height: 5.5vh;
+    width: 196.8px;
+    height: 36px;
     background-color: #26272B;
     border-radius: 10px;
     border: none;
@@ -1858,7 +1861,11 @@ figcaption {
     justify-content: flex-end;
     z-index: 999;
     transition: .3s ease;
-    overflow-y: scroll;
+    overflow: auto;
+}
+
+.container-aside::-webkit-scrollbar {
+    display: none;
 }
 
 #toggle-menu:checked+.container-aside {
